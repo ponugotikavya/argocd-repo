@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mycont
-          image: shaikmustafa/anath:v1
+          image: shaikmustafa/mytetrisgame:v1          
           ports:
             - containerPort: 3000
 
