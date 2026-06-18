@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+iapiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mydeploy
@@ -14,6 +14,9 @@ spec:
         app: swiggy
         env: dev
     spec:
+      imagePullSecrets:
+    - name: dockerhub-secret
+
       containers:
         - name: mycont
           image: ponugotikava/dockerjenkins/jenkinsimage
