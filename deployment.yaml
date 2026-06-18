@@ -14,8 +14,6 @@ spec:
         app: swiggy
         env: dev
     spec:
-      imagePullSecrets:
-      - name: dockerhub-secret
       containers:
         - name: mycont
           image: shaikmustafa/anath:v1
