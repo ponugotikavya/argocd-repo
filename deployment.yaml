@@ -1,4 +1,4 @@
-iapiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mydeploy
@@ -15,8 +15,7 @@ spec:
         env: dev
     spec:
       imagePullSecrets:
-    - name: dockerhub-secret
-
+      - name: dockerhub-secret
       containers:
         - name: mycont
           image: ponugotikava/dockerjenkins/jenkinsimage
