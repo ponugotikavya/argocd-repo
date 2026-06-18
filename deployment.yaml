@@ -18,7 +18,7 @@ spec:
       - name: dockerhub-secret
       containers:
         - name: mycont
-          image: ponugotikava/dockerjenkins/jenkinsimage
+          image: ponugotikava/dockerjenkins:jenkinsimage
           ports:
             - containerPort: 80
 
